@@ -1,17 +1,13 @@
-# Twig Version (Static HTML + JS)
+# HNG Ticket App – Stage 2
 
-## Test Credentials
-- **Email**: `test@example.com`
-- **Password**: `password`
+**3 Identical Apps – Deployed with GitHub Pages**
 
-## Features
-- Wavy hero with decorative circle
-- Login + protected routes
-- Dashboard stats
-- Full CRUD tickets
-- Toast notifications
-- Responsive design
-- Max-width: 1440px
+| Framework | Live URL | Code |
+|---------|----------|------|
+| **Twig** | [Live](https://nchiwar.github.io/hng-ticket-app/pages/landing.html) | [`/twig`](/twig) |
+| **React + Vite** | [Live](https://nchiwar.github.io/hng-ticket-app/docs/react/) | [`/react`](/react) |
+| **Vue + Vite** | [Live](https://nchiwar.github.io/hng-ticket-app/docs/vue/) | [`/vue`](/vue) |
 
-## Deploy
-Drag this folder to [Netlify Drop](https://app.netlify.com/drop)
+**Test**: `test@example.com` / `password`
+
+**All 3 apps are identical in design and behavior.**
