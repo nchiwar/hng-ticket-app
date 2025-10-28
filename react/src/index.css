@@ -1,0 +1,103 @@
+/* Same as twig/css/style.css — COPY FROM THERE */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f9f9fb; color: #1a1a1a; line-height: 1.6; }
+.container { max-width: 1440px; margin: 0 auto; padding: 0 1rem; }
+/* ... REST OF THE CSS FROM TWIG ... */
+/* twig/css/style.css */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { 
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
+  background: #f9f9fb; color: #1a1a1a; line-height: 1.6; 
+}
+
+.container { max-width: 1440px; margin: 0 auto; padding: 0 1rem; }
+
+/* Header */
+.site-header {
+  background: #fff; padding: 1rem 0; box-shadow: 0 2px 4px rgba(0,0,0,.05); 
+  position: sticky; top: 0; z-index: 100;
+}
+.site-header nav ul { 
+  list-style: none; display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; 
+}
+.site-header nav a {
+  color: #6b48ff; text-decoration: none; font-weight: 500; 
+  padding: .5rem 1rem; border-radius: 8px; transition: .2s;
+}
+.site-header nav a:hover, .site-header nav a:focus { 
+  background: #6b48ff10; outline: 2px solid #6b48ff; 
+}
+.site-header nav a.active { 
+  font-weight: 700; text-decoration: underline; text-underline-offset: 4px; 
+}
+
+/* Hero */
+.hero {
+  position: relative; min-height: 70vh; background: linear-gradient(to bottom, #f0f2f5, #ffffff); 
+  overflow: hidden; display: flex; align-items: center; justify-content: center; text-align: center;
+}
+.hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+.hero p { font-size: 1.2rem; margin-bottom: 2rem; color: #606060; max-width: 600px; }
+.cta-buttons a { margin: 0 .5rem; }
+.wave { position: absolute; bottom: 0; width: 100%; height: 120px; }
+.deco-circle { 
+  position: absolute; width: 200px; height: 200px; 
+  background: url('../assets/circle-deco.svg') no-repeat center/contain; opacity: 0.6; 
+}
+
+/* Cards */
+.card {
+  background: #fff; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,.1); 
+  padding: 1.5rem; margin: 1rem 0;
+}
+.stats-grid { 
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; 
+}
+.ticket-grid { 
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; 
+}
+
+/* Forms */
+form { max-width: 500px; margin: 2rem auto; }
+form label { display: block; margin: 1rem 0 .5rem; font-weight: 500; }
+form input, form select, form textarea {
+  width: 100%; padding: .75rem; border: 1px solid #d0d0d0; border-radius: 8px; font-size: 1rem;
+}
+form input:focus, form select:focus, form textarea:focus { 
+  outline: 2px solid #6b48ff; border-color: #6b48ff; 
+}
+.error { color: #dc3545; font-size: .85rem; margin-top: .25rem; }
+
+/* Buttons */
+.btn {
+  background: #6b48ff; color: white; border: none; padding: .75rem 1.5rem; 
+  border-radius: 12px; font-weight: 600; cursor: pointer; width: 100%; margin-top: 1rem;
+}
+.btn.gradient { background: linear-gradient(90deg, #6b48ff, #a066ff); }
+.btn:hover { opacity: .9; }
+.btn.small { width: auto; padding: .5rem 1rem; font-size: .9rem; }
+
+/* Tags */
+.tag { padding: .25rem .75rem; border-radius: 12px; font-size: .8rem; font-weight: 600; }
+.tag.open { background: #d4edda; color: #155724; }
+.tag.in_progress { background: #fff3cd; color: #856404; }
+.tag.closed { background: #e9ecef; color: #495057; }
+
+/* Toast */
+.toast {
+  position: fixed; bottom: 20px; right: 20px; padding: 1rem 1.5rem; 
+  border-radius: 8px; color: white; z-index: 1000; animation: fadeIn .3s;
+}
+.toast.success { background: #28a745; }
+.toast.error { background: #dc3545; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+/* Footer */
+.footer { text-align: center; padding: 2rem; color: #777; margin-top: 3rem; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 { font-size: 2.2rem; }
+  .site-header nav ul { flex-direction: column; gap: 1rem; }
+  .stats-grid, .ticket-grid { grid-template-columns: 1fr; }
+}
